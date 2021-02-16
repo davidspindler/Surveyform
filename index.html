@@ -1,0 +1,143 @@
+
+
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Survey Form</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+    <h1 id="title"> Survery form for Tennis</h1>
+    <p id="description">please answer some of the following questions</p>
+</head>
+
+<body class="text-center">
+  <form id="survey-form">
+    <div class="text-center">
+      please enter your name:
+    </div>
+    <label id="name-label">
+        
+      </label> </br>
+      <input 
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Enter your name"
+      required
+    />
+  </br>
+<div class="text-center">
+     <div class="text-center">
+      please enter your email:
+    </div>
+  <label id="email-label"></label> </br>
+    <input 
+    type="email"
+    name="email"
+    id="email"
+    class="text-center"
+    placeholder="Enter your email"
+    required
+  />
+</div>
+</br>
+   <div class="text-center">
+      age:
+    </div>
+  <label id="number-lable"></label> </br>
+    <input 
+    type="number"
+    name="age"
+    id="number"
+    min="12"
+    max="100"
+    placeholder="Age"
+    />
+
+</br>
+
+<select
+       name="dropdown"
+       id="dropdown"
+       required
+       >
+  <option disabled selected value> select Current job status</option>
+  <option value="student"> Student </option>
+  <option value="Full time job"> Full Time Job </option>
+  <option value="other"> Other</option>
+  </br>
+</select>
+<div class="text-center">
+  <p>Is this form easy to navigate?</p>
+
+  <input
+         type="radio"
+         name="user-recommend"
+         value="no"
+         > no
+
+
+  <input
+         type="radio"
+         name="user-recommend"
+         value="maybe"
+         >maybe
+  
+ 
+   <input
+         type="radio"
+         name="user-recommend"
+         value="yes"
+         > yes
+
+  
+</div>
+ <div class="text-center">
+      <p>
+        What would you make this website better?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      
+        <input
+          name="prefer"
+          value="more colors"
+          type="checkbox"
+          class="input-checkbox"
+        />more colors
+    
+        <input
+          name="prefer"
+          value="More ideas"
+          type="checkbox"
+          class="input-checkbox"
+        />More Ideas
+      <input
+          name="prefer"
+          value="using more pictures"
+          type="checkbox"
+          class="input-checkbox"
+        />Using more pictures
+</div>
+</br>
+Is there any comments/suggestions?
+<textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+          ></textarea>
+<div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</body>
+</html>
